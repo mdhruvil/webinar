@@ -1,6 +1,6 @@
 # Edu Sakha
 
-This is a project which is made in Hackathon at DAIICT. (ScreenShots are attached)
+This is a project which is made in Hackathon at DAIICT. Screenshots are [here](https://drive.google.com/drive/folders/1yJeK6CaJj4iOXARWjfvH5FiMZv17pVyk?usp=drive_link)
 
 theme : Edtech
 
@@ -22,3 +22,5 @@ Members :
 - [ ] Email Alarms
 - [ ] Make Search Work
 - [ ] Create Question Section so that students can ask questions and alumni can answer their questions.
+
+
