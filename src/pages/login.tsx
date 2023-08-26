@@ -9,12 +9,15 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { useRouter } from "next/router";
 
 export default function login() {
+  const router = useRouter();
   async function logInClickHandler() {
     const googleProvider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, googleProvider);
+      await router.replace("/");
     } catch (error) {
       console.log(error);
     }

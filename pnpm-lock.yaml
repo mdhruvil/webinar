@@ -20,6 +20,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.21)(react@18.2.0)
+  '@jitsi/react-sdk':
+    specifier: ^1.3.0
+    version: 1.3.0(react-dom@18.2.0)(react@18.2.0)
   '@types/node':
     specifier: 20.5.6
     version: 20.5.6
@@ -29,6 +32,9 @@ dependencies:
   '@types/react-dom':
     specifier: 18.2.7
     version: 18.2.7
+  agora-react-uikit:
+    specifier: ^1.2.0
+    version: 1.2.0(react@18.2.0)
   firebase:
     specifier: ^10.3.0
     version: 10.3.0
@@ -44,6 +50,9 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  react-icons:
+    specifier: ^4.10.1
+    version: 4.10.1(react@18.2.0)
   react-responsive-carousel:
     specifier: ^3.2.23
     version: 3.2.23
@@ -1818,6 +1827,16 @@ packages:
       yargs: 17.7.2
     dev: false
 
+  /@jitsi/react-sdk@1.3.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-f+xtk/j0iXIMJscJeGt3OXnocFeG1pX6OMjv7H/9AaTnCUNsDc/jfDSPme+h0RmdymzJdkSwyHjmkhDK9aehzw==}
+    peerDependencies:
+      react: 16 || 17 || 18
+      react-dom: 16 || 17 || 18
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@next/env@13.4.19:
     resolution: {integrity: sha512-FsAT5x0jF2kkhNkKkukhsyYOrRqtSxrEhfliniIq0bwWbuXLgyt3Gv0Ml+b91XwjwArmuP7NxCiGd++GGKdNMQ==}
     dev: false
@@ -2008,6 +2027,51 @@ packages:
     resolution: {integrity: sha512-EhDHKLutMtvLFCjBjyIY6h1JoJJNXG3KJz7Dj1sh4tj4LWAqo/TqLvgHyUTB29XMHwoslFHDJHKVWmLGMi+ULQ==}
     dependencies:
       '@zag-js/dom-query': 0.10.5
+    dev: false
+
+  /agora-react-uikit@1.2.0(react@18.2.0):
+    resolution: {integrity: sha512-+bqYsktLs3CV0OFQyD+uIxqlEMPMLprw446MnOQA4BWr+EFJBO3zA+J1ogXHOgJ+dSRegbD+SA8Ehe2et6K/ew==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      agora-rtc-react: 1.1.3(react@18.2.0)
+      agora-rtm-react: 1.1.2(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /agora-rtc-react@1.1.3(react@18.2.0):
+    resolution: {integrity: sha512-AgmDoeLoL3xC7u60lTehHi1GvHsP8l09CX3bn+NyHx6E0Dmbbxdtqkn+YrlakWa4IYOAn0d/9oKvuGrNtUiOpA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      agora-rtc-sdk-ng: 4.18.2
+      react: 18.2.0
+    dev: false
+
+  /agora-rtc-sdk-ng@4.18.2:
+    resolution: {integrity: sha512-tvyuXHVL15Eo0lK3wwM3rGPKGPeGYuarAwCs5oyveht1HZO9z3w6vra3d/q3eOCYpvQscCW7P0QNfUIAQTs4RQ==}
+    dependencies:
+      agora-rte-extension: 1.2.3
+    dev: false
+
+  /agora-rte-extension@1.2.3:
+    resolution: {integrity: sha512-k3yNrYVyzJRoQJjaJUktKUI1XRtf8J1XsW8OzYKFqGlS8WQRMsES1+Phj2rfuEriiLObfuyuCimG6KHQCt5tiw==}
+    dev: false
+
+  /agora-rtm-react@1.1.2(react@18.2.0):
+    resolution: {integrity: sha512-iNIU48khfevojXn0beJU94+HO9zvHZgpO42YJXqaEYEjdVWhZVijZw3bZWC8hTsEMuew5XB0Gk2tNJI0biRPQg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.0.0 || ^17 || ^18
+    dependencies:
+      agora-rtm-sdk: 1.4.3-203
+      react: 18.2.0
+    dev: false
+
+  /agora-rtm-sdk@1.4.3-203:
+    resolution: {integrity: sha512-uQh9zqRtELAblxt7nXSv20pH7oQfTDj7gC2NI2cDIe9dcKBlQpEVf2wBM68so6sZ767ZLcW+z/FCd5QVCt9RvA==}
     dev: false
 
   /ansi-regex@5.0.1:
@@ -2540,6 +2604,14 @@ packages:
       react-clientside-effect: 1.2.6(react@18.2.0)
       use-callback-ref: 1.3.0(@types/react@18.2.21)(react@18.2.0)
       use-sidecar: 1.1.2(@types/react@18.2.21)(react@18.2.0)
+    dev: false
+
+  /react-icons@4.10.1(react@18.2.0):
+    resolution: {integrity: sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is@16.13.1:
