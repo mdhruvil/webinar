@@ -6,6 +6,10 @@ theme : Edtech
 
 Team Name: Team Perpendicular
 
+[University Home Page](https://webinar-five.vercel.app/university/XyQtGnpPCeOjKM7x9xnJ)
+[University Detail Page](https://webinar-five.vercel.app/university/XyQtGnpPCeOjKM7x9xnJ/details)
+[Webinar Page](https://webinar-five.vercel.app/university/XyQtGnpPCeOjKM7x9xnJ/webinar/hello)
+
 Members :
 
 - Dhruvil Moradiya
