@@ -2,9 +2,6 @@ import SayHi from "@/lib/components/SayHi";
 import { auth } from "@/lib/firebase";
 import { Button } from "@chakra-ui/react";
 import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const loginClickHandler = async () => {
@@ -14,11 +11,5 @@ export default function Home() {
   const logOutClickHandler = async () => {
     await signOut(auth);
   };
-  return (
-    <>
-      <Button onClick={loginClickHandler}>Login With Google</Button>
-      <Button onClick={logOutClickHandler}>Log out</Button>
-      <SayHi></SayHi>
-    </>
-  );
+  return <></>;
 }
