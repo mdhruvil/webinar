@@ -29,7 +29,7 @@ Because it is hosted on free tier it will take some time after button clicks ple
 
 ### User Flow
 
-![User Flow](./userflow.jpeg)
+WIP
 
 Members :
 
