@@ -1,14 +1,14 @@
 # Edu Sakha
 
-This is a project which is made in Hackathon at DAIICT. Screenshots are [here](https://drive.google.com/drive/folders/1yJeK6CaJj4iOXARWjfvH5FiMZv17pVyk?usp=drive_link)
+This is a project which is made in Hackathon at DAIICT.
 
 theme : Edtech
 
 Team Name: Team Perpendicular
 
-[Live Demo](https://webinar-five.vercel.app/)
+Because it is hosted on free tier it will take some time after button clicks please wait for sometime
 
-[Webinar Page](https://webinar-five.vercel.app/university/XyQtGnpPCeOjKM7x9xnJ/webinar/hello)
+[Live Demo](https://webinar-five.vercel.app/)
 
 Members :
 
@@ -26,5 +26,3 @@ Members :
 - [ ] Email Alarms
 - [ ] Make Search Work
 - [ ] Create Question Section so that students can ask questions and alumni can answer their questions.
-
-
