@@ -858,6 +858,11 @@ export default function CallToActionWithIllustration() {
           college.
         </Text>
         <Stack spacing={6} direction={"row"}>
+          <Link href={`/university/${router.query.uniId}/alumni/webinar`}>
+            <Button rounded={"full"} px={6}>
+              Show sheduled webinars
+            </Button>
+          </Link>
           <Link href={`/university/${router.query.uniId}/webinar/create`}>
             <Button
               rounded={"full"}

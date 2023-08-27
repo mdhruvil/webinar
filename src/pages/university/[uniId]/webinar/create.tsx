@@ -93,7 +93,7 @@ function createWebinar({}: Props) {
             >
               <Stack spacing={4}>
                 <FormControl id="name" isRequired>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Webinar Name</FormLabel>
                   <Input
                     type="text"
                     value={name}

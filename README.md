@@ -27,6 +27,10 @@ Because it is hosted on free tier it will take some time after button clicks ple
 - [ ] Make Search Work
 - [ ] Create Question Section so that students can ask questions and alumni can answer their questions.
 
+### User Flow
+
+![User Flow](./userflow.jpeg)
+
 Members :
 
 - Dhruvil Moradiya
