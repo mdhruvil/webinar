@@ -10,12 +10,6 @@ Because it is hosted on free tier it will take some time after button clicks ple
 
 [Live Demo](https://webinar-five.vercel.app/)
 
-Members :
-
-- Dhruvil Moradiya
-- Harsh Jani
-- Harshil Joshi
-
 ## Main Features
 
 - [x] Create University Details Page
@@ -24,8 +18,24 @@ Members :
 - [x] Create Home Page
 - [x] Only registerd students can enter the webinar
 - [x] Create page for alumni to create webinars
-- [x] Create Page to become alumni
+- [x] Create page to become alumni
 - [x] Create page for alumni to view their created webinars
+- [x] Students can't register after webinar is live
+- [x] Only registered stuednts can create webinar
+- [x] Registered Students will see join button if webinar is started
 - [ ] Email Alarms
 - [ ] Make Search Work
 - [ ] Create Question Section so that students can ask questions and alumni can answer their questions.
+
+Members :
+
+- Dhruvil Moradiya
+- Harsh Jani
+- Harshil Joshi
+
+Tech Stack :
+
+- Next JS
+- React JS
+- Firebase
+- Chakra UI
