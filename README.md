@@ -10,6 +10,8 @@ Because it is hosted on free tier it will take some time after button clicks ple
 
 [Live Demo](https://webinar-five.vercel.app/)
 
+![Preivew image](image.png)
+
 ## Main Features
 
 - [x] Create University Details Page
@@ -29,7 +31,7 @@ Because it is hosted on free tier it will take some time after button clicks ple
 
 ### User Flow
 
-WIP
+![Userflow](image-1.png)
 
 Members :
 
