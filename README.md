@@ -22,7 +22,7 @@ Members :
 - [x] Create University Home page (View Previous Webinar is pending)
 - [x] Create webinar screen
 - [x] Create Home Page
-- [ ] Only registerd students can enter the webinar
+- [x] Only registerd students can enter the webinar
 - [ ] Email Alarms
 - [ ] Make Search Work
 - [ ] Create Question Section so that students can ask questions and alumni can answer their questions.

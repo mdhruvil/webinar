@@ -1,5 +1,5 @@
 import GoogleLogo from "@/lib/components/GoogleLogo";
-import { auth } from "@/lib/firebase";
+import { auth, db } from "@/lib/firebase";
 import {
   Button,
   Flex,
@@ -9,6 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { addDoc, doc, getDoc, setDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
 
 export default function login() {
@@ -16,8 +17,18 @@ export default function login() {
   async function logInClickHandler() {
     const googleProvider = new GoogleAuthProvider();
     try {
-      await signInWithPopup(auth, googleProvider);
-      await router.replace("/");
+      const { user } = await signInWithPopup(auth, googleProvider);
+      const userSnap = await getDoc(doc(db, "user", user.uid));
+      if (!userSnap.exists()) {
+        await setDoc(doc(db, "user", user.uid), {
+          uid: user.uid,
+          displayName: user.displayName,
+          email: user.email,
+          photoURL: user.photoURL,
+          alumniOf: [],
+        });
+      }
+      await router.replace("/university/XyQtGnpPCeOjKM7x9xnJ");
     } catch (error) {
       console.log(error);
     }

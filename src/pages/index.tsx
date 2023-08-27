@@ -11,11 +11,12 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { collection, getDocs } from "firebase/firestore";
-import { uniDetailsTemp } from "./university/[uniId]/details";
 import Link from "next/link";
+import React from "react";
+import { uniDetailsTemp } from "./university/[uniId]/details";
 
 type Props = {
-  universities: Array<typeof uniDetailsTemp> & { id: string };
+  universities: Array<typeof uniDetailsTemp & { id: string }>;
 };
 
 export default function Home({ universities }: Props) {
@@ -30,17 +31,16 @@ export default function Home({ universities }: Props) {
         </InputGroup>
         {universities.map((uni, i) => {
           return (
-            <>
+            <React.Fragment key={uni.id}>
               <Link href={`/university/${uni.id}`}>
                 <Card variant="elevated" p={3}>
                   <HStack>
                     <Image src={uni.logoUrl} w={100}></Image>
-
                     <Heading size="md">{uni.name}</Heading>
                   </HStack>
                 </Card>
               </Link>
-            </>
+            </React.Fragment>
           );
         })}
       </Stack>
@@ -55,7 +55,13 @@ export async function getServerSideProps() {
   uniSnapshot.forEach((doc) => {
     universities.push({ id: doc.id, ...doc.data() });
   });
-  console.log(universities);
+
+  return {
+    redirect: {
+      destination: "/university/XyQtGnpPCeOjKM7x9xnJ",
+      permanent: false,
+    },
+  };
   return {
     props: {
       universities,

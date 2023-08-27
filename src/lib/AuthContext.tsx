@@ -27,10 +27,8 @@ export const AuthContextProvider = ({ children }: Props) => {
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
-      //@ts-expect-error
       setCurrentUser(user);
       setIsAuthLoading(false);
-      console.log(user);
     });
 
     return () => {
