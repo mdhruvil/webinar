@@ -23,6 +23,9 @@ Members :
 - [x] Create webinar screen
 - [x] Create Home Page
 - [x] Only registerd students can enter the webinar
+- [x] Create page for alumni to create webinars
+- [x] Create Page to become alumni
+- [x] Create page for alumni to view their created webinars
 - [ ] Email Alarms
 - [ ] Make Search Work
 - [ ] Create Question Section so that students can ask questions and alumni can answer their questions.
