@@ -2,6 +2,8 @@
 
 This is a project which is made in Hackathon at DAIICT.
 
+User flow is given below
+
 theme : Edtech
 
 Team Name: Team Perpendicular
